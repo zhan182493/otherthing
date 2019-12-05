@@ -7,6 +7,6 @@
 7-------$ git pull --rebase origin master  将远程的readme拉到本地
 8  ------$ git add .   添加当前目录到缓存区
 9  ------$ git commit -m '<这里是备注信息>'
-10  ------$ git push -u origin master 第一次同步需要在远程添加master分支，此后只需$ git push即可
+10  ------$ git push origin master 在远程添加master分支并上传文件
 注：每次进行上传前先将远程的$ git pull 到本地（如果存在多分支，在进行操作前必须切换所在分支）
 
