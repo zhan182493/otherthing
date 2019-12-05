@@ -1,0 +1,10 @@
+1 ------找到项目文件夹，右键点击Git Bash
+2 ------ $ git init  在当前项目的目录中生成本地的git管理
+3 ------ $ git config --global user.name '<用户名>'
+4 ------ $ git config --global user.email '<邮箱>'
+5 ------ $ git remote add origin <https://自己的仓库url地址>  将本地的仓库关联到github上
+6 ------ $ git checkout -b master 创建本地名为master的分支,并切换到该分支下
+7  ------$ git add .   添加当前目录到缓存区
+8  ------$ git commit -m '<这里是备注信息>'
+9  ------$ git push -u origin master 第一次同步需要在远程添加master分支，此后只需$ git push即可
+注：每次进行上传前先将远程的$ git pull 到本地（如果存在多分支，在进行操作前必须切换所在分支）
