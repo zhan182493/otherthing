@@ -1,0 +1,19 @@
+1、命令窗口进入到数据库安装目录下的bin目录
+2、mysql -u root -p
+3、
+grant all privileges on *.* to 'root'@'192.168.0.103' identified by '123456';
+
+如果你是本地登录的，那么：
+grant all privileges on *.* to 'root'@'localhost' identified by '123456';
+
+当然你也可以直接改成这样：
+grant all privileges on *.* to 'root'@'%' identified by '123456';
+就可以给所有ip都设定root登陆了。
+
+如果授权成功，会有Query OK的提示。
+
+4、flush privileges;
+这个是刷新授权的意思，如果没有这句话，授权可能无法立刻生效。
+
+5、exit;
+这个是退出的意思。
